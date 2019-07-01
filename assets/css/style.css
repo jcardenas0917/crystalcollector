@@ -1,0 +1,90 @@
+html, body {
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h3 {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#title {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(92, 37, 37, 0.397);
+    padding: 20px;
+    font-size: xx-large;
+}
+
+#rules {
+    margin-top: 20px;
+    padding: 20px;
+    height: 100%;
+    background-color: rgb(224, 190, 177);
+    color: green;
+}
+
+#randomNumber {
+    margin-top: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: green;
+}
+
+#crystal1 {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: orangered;
+}
+
+#crystal2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: lightblue;
+}
+
+#crystal3 {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: purple;
+}
+
+#crystal4 {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+}
+
+#win {
+    margin-top: 20px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#total {
+    margin-top: 20px;
+    width: 100%;
+    background-color: green;
+    height: 50px;
+}
+
+#score {
+    margin-top: 20px;
+    width: 100%;
+    background-color: green;
+    height: 150px;
+    font-size: 100px;
+}
