@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
-
+    
+    
     <!-- Added a link to Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
@@ -47,13 +46,14 @@
 
             <div class="row">
                 <div class="col-md-3" id="randomNumber">
-                    <h1>Random Number here</h1>
+                    
                 </div>
                 <div class="col-md-1">
                     
                 </div>
-                <div class="col-md-3" id="win">
-                    <h1>Score Here</h1>
+                <div class="col-md-3" id="scorecard">
+                    <p id = "wins"></p>
+                    <p id = "losses"></p>
                 </div>
             </div>
             <!-- ---------------------------------- -->
@@ -61,16 +61,16 @@
             <div class="row">
 
                 <div class="col-md-2" id="crystal1">
-                    <p>crystal 1</p>
+                    <img src="./assets/images/red.jpg" alt="red" height="100" width="100">
                 </div>
                 <div class="col-md-2" id="crystal2">
-                    <p>crystal 2</p>
+                    <img src="./assets/images/blue.jpg" alt="red" height="100" width="100">
                 </div>
                 <div class="col-md-2" id="crystal3">
-                    <p>crystal 3</p>
+                    <img src="./assets/images/green.jpg" alt="red" height="100" width="100">
                 </div>
                 <div class="col-md-2" id="crystal4">
-                    <p>crystal 4</p>
+                    <img src="./assets/images/yellow.jpg" alt="red" height="100" width="100">
                 </div>
             </div>
             <!-- ---------------------------------------- -->
@@ -89,6 +89,9 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
+
 
 </html>

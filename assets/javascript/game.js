@@ -1,4 +1,3 @@
-jQuery(document).ready(function () {
 //set empty array for the each crystal number
 
 var crystalNum = [];
@@ -20,12 +19,16 @@ function randomizeNumber() {
 function randomNumber() {
     targetNum = Math.floor(Math.random() * 120) + 19;
     console.log(targetNum);
+    $("#randomNumber").text(targetNum);
 }
 
 //function will load the application and start the randomization of numbers at page load
 window.onload = function () {
     randomizeNumber();
     randomNumber();
+    $("#score").text(score);
+    $("#wins").text("Wins: " + wins);
+    $("#losses").text("Losses: " + losses);
 }
 
 //Adds a value to the score
@@ -40,11 +43,11 @@ function addToScore(number) {
 function winCheck() {
     if (score === targetNum) {
         wins++;
-        console.log("Wins: " + wins);
+        $("#wins").text("Wins: " + wins);
         resetGame();
     } else if (score > targetNum) {
         losses++;
-        console.log("Losses: " + losses);
+        $("#losses").text("Losses: " + losses);
         resetGame();
     }
 }
@@ -53,6 +56,7 @@ function resetGame() {
     randomizeNumber();
     randomNumber();
     score = 0;
+    $("#score").text(score);
 }
 
 //this function will do the math and the run the game
@@ -60,7 +64,6 @@ function resetGame() {
 
 // On click function will assign push the numbers to the screen 
 $("#crystal1").on("click", function () {
-    console.log("I clicked crystal 1");
     addToScore(crystalNum[0]);
     winCheck();
 });
@@ -81,4 +84,3 @@ $("#crystal4").on("click", function () {
 
 });
 
-});
