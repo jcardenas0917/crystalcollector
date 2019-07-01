@@ -10,7 +10,6 @@ var losses = 0;
 function randomizeNumber() {
     for (var i = 0; i < 4; i++) {
         crystalNum[i] = (Math.floor(Math.random() * 12) + 1);
-        console.log(crystalNum);
     }
 
 }
@@ -18,7 +17,6 @@ function randomizeNumber() {
 //this function will randomize a number between 19-120 as the target number
 function randomNumber() {
     targetNum = Math.floor(Math.random() * 120) + 19;
-    console.log(targetNum);
     $("#randomNumber").text(targetNum);
 }
 
