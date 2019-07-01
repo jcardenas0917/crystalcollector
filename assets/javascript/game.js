@@ -31,9 +31,7 @@ window.onload = function () {
 
 //Adds a value to the score
 function addToScore(number) {
-    console.log(score);
     score += number;
-    console.log(score);
     $("#score").text(score);
 }
 
@@ -50,6 +48,7 @@ function winCheck() {
     }
 }
 
+//Reset the game
 function resetGame() {
     randomizeNumber();
     randomNumber();
@@ -57,10 +56,7 @@ function resetGame() {
     $("#score").text(score);
 }
 
-//this function will do the math and the run the game
-
-
-// On click function will assign push the numbers to the screen 
+// On click function will assign value of each number in the array.
 $("#crystal1").on("click", function () {
     addToScore(crystalNum[0]);
     winCheck();
